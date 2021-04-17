@@ -1,0 +1,294 @@
+$bg-color: #E6E5E1;
+$shdow-gray: #d3d3d5;
+$orange: #DA4D1D;
+$blue: #2b26c3;
+
+.nextArrowPhotos{
+  position: relative;
+  z-index: 2;
+}
+.fas {
+  position: relative;
+  top: 130px;
+  left: 50px;
+  opacity: 0;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.container {
+  width: 100%;
+  &:hover .fas{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+   z-index: 1;
+}
+  .card {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background:none;
+  }
+    .card:hover {
+      background-color: #3c3c43;
+      opacity: 20%;
+
+    }
+
+}
+
+
+
+.nextArrow{
+  position: absolute;
+  right: 20px;
+  top: 45%;
+  width:50px;
+  height:50px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background: orange;
+  z-index: 2;
+  transition: 0.5s background-color;
+}
+.nextArrow:hover{
+  background-color: #3c3c43;
+  cursor: pointer;
+}
+.button__shop{
+  width: 200px;
+  border: none;
+  outline: none;
+  background: #C36739;
+  font-size: 14px;
+  padding: 17px 44px ;
+  text-transform: uppercase;
+  display: inline-block;
+  color: white;
+  transition: 0.5s background-color;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.button__shop:hover{
+  cursor: pointer;
+  background: #3c3c43;
+}
+.prevArrow{
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  width:50px;
+  height:50px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  background: orange;
+  z-index: 2;
+  transition: 0.5s background-color;
+}
+.prevArrow:hover{
+  background-color: #3c3c43;
+  cursor: pointer;
+}
+.photoSlider{
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  border: none;
+  outline: none;
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: orange;
+  }
+  .slider-container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    &__background {
+      position: absolute;
+      top: 0;
+      width: 45%;
+      height: 70%;
+      background-image: url("https://cdn4.vectorstock.com/i/1000x1000/62/73/vintage-grape-background-vector-246273.jpg");
+      opacity: 10%;
+    }
+    &__shopNow{
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      width: 500px;
+      z-index: 1;
+      .titles{
+        width: 100%;
+        display: grid;
+        grid-gap: 10px;
+        .name{
+          font-family: "Dancing Script", cursive;
+          font-size: 30px;
+          font-weight: 400;
+          color: #c36739;
+          text-align: center;
+        }
+        h2{
+          font-size: 48px;
+          text-align: center;
+          clear: both;
+          font-family: "Amiri", serif;
+          font-weight: 700;
+        }
+        .text{
+          text-align: center;
+        }
+      }
+    }
+    }
+   .photos{
+     width: 55%;
+     position: relative;
+     top:0;
+     left: 45%;
+     .photo{
+      width: 100%;
+      height: 100%;
+      background-repeat:  no-repeat;
+      background-size: 100% 100%;
+    }
+   }
+  }
+.home-wine__shop{
+    width: 100%;
+    padding-bottom: 100px;
+    text-align: center;
+  h3{
+      font-family: "Dancing Script", cursive;
+      font-size: 30px;
+      font-weight: 400;
+      color: #c36739;
+      margin-top: 50px;
+    }
+   p{
+    font-size: 35px;
+    clear: both;
+    font-family: "Amiri", serif;
+    font-weight: 400;
+  }
+}
+.winesSlider {
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 50px;
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: orange;
+  }
+  .wine-shop {
+    width: 300px;
+    height: 400px;
+
+    &__cart{
+      position: absolute;
+      width: 200px;
+      border: none;
+      outline: none;
+      background: #C36739;
+      font-size: 14px;
+      padding: 17px 44px ;
+      text-transform: uppercase;
+      display: inline-block;
+      color: white;
+      transition: 0.5s background-color;
+      z-index: 3;
+    }
+    &__cart:hover  {
+      cursor: pointer;
+      background: #3c3c43;
+    }
+    &__photos {
+      width: 300px;
+      height: 300px;
+    }
+    .discounts{
+      font-size: 18px;
+      color: #555555;
+      font-weight: normal;
+      margin-right: 5px;
+      .redPrice{
+        font-size: 21px;
+        color: red;
+        padding-left: 10px;
+        text-decoration: none;
+      }
+    }
+    .priceUnderline{
+      font-size: 18px;
+      color: #555555;
+      font-weight: normal;
+      margin-right: 5px;
+      text-decoration: line-through;
+    }
+    .price{
+      font-size: 18px;
+      color: #555555;
+      font-weight: normal;
+      margin-right: 5px;
+
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .winesSlider{
+    margin: 0 auto;
+    padding-left: 50px;
+  }
+  .photoSlider{
+    width: 80%;
+    height: 1200px;
+    transition: 0.5s height;
+    .photos{
+      width: 100%;
+      position: relative;
+      top: 600px;
+      left: 0;
+    }
+    .slider-container{
+     &__background {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 70%;
+      background-image: url("https://cdn4.vectorstock.com/i/1000x1000/62/73/vintage-grape-background-vector-246273.jpg");
+      opacity: 10%;
+     }
+    }
+  }
+  .slider-container{
+    width: 100%;
+    height: 700px;
+    display: grid;
+  }
+  .photoSlider .slider-container__shopNow .titles {
+    width: 50%;
+    height: 30%;
+    display: grid;
+    grid-gap: 0;
+  }
+  .photoSlider .photos .photo {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .photoSlider .slider-container__shopNow {
+    position: absolute;
+    width: 100%;
+    left: 28%;
+    z-index: 1;
+  }
+}
+

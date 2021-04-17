@@ -1,0 +1,63 @@
+.header {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__name{
+    width: 300px;
+    height: 50px;
+    display: flex;
+  }
+  &__logo{
+    width: 70px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("https://themes.getmotopress.com/vite-nera/wp-content/uploads/sites/41/2021/02/logo-icon.svg");
+  }
+  &__site-title-big{
+    font-size: 30px;
+    font-family: "Amiri", serif;
+    line-height: 1;
+    color: #333533;
+  }
+  &__site-title-small{
+    font-size: 14px;
+  }
+  .nav{
+     width: 400px;
+     height: 100%;
+     display: flex;
+     justify-content: space-around;
+     padding-left: 100px;
+     padding-right: 200px;
+   }
+  &-shop__icon{
+    padding-left: 100px ;
+    color: black;
+  }
+}
+.nav__links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-shop__icon{
+      padding: 0 0 0 0;
+      margin: 0 auto;
+    }
+    &__name{
+      margin-left: 80px;
+    }
+  }
+
+}
